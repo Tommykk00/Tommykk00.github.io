@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .heart {
+            font-size: 5rem;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .heart:hover {
+            transform: scale(1.2);
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #d63384;
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart" onclick="showMessage()">❤️</div>
+    <p class="message">Click the heart to see why I love you!</p>
+    
+    <script>
+        const messages = [
+    "You make my world brighter!",
+    "Your smile is my favorite thing!",
+    "Every moment with you is magical!",
+    "I love the way you laugh!",
+    "You are my happiness!",
+    "You always support me no matter what!",
+    "I love the way you understand me without words!",
+    "You make even ordinary moments feel special!",
+    "Your kindness inspires me every day!",
+    "You believe in me even when I doubt myself!",
+    "I feel safe and loved whenever I'm with you!",
+    "You make me want to be the best version of myself!",
+    "Your hugs are my favorite place in the world!",
+    "You bring so much joy into my life!",
+    "I love the way you look at me!",
+    "Your love gives me strength and confidence!",
+    "You know how to make me laugh even on bad days!",
+    "Every conversation with you is meaningful!",
+    "You are my biggest cheerleader and supporter!",
+    "I admire your kindness and compassion!",
+    "You make life feel like an adventure!",
+    "Your presence alone makes everything better!",
+    "I love how we can be silly together!",
+    "You understand me like no one else does!",
+    "You never fail to make me feel special!",
+    "Your love is the best gift I’ve ever received!",
+    "I appreciate how you always listen to me!",
+    "You make love feel effortless and beautiful!",
+    "Being with you is the best part of my day!",
+    "I am beyond grateful to have you in my life!"
+];
+
+        
+        function showMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            document.querySelector('.message').textContent = messages[randomIndex];
+        }
+    </script>
+</body>
+</html>
